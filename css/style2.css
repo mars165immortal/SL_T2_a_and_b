@@ -1,0 +1,91 @@
+body {
+    background-image: url('/images/image.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#lighting {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}
+
+.light {
+	width: 100px;
+	height: 100px;
+	margin: 0 50px;
+	border-radius: 50%;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#light1 {
+	background-color: red;
+}
+
+#light2 {
+	background-color: green;
+}
+
+#light3 {
+	background-color: blue;
+}
+
+.light.bright {
+	filter: brightness(1);
+}
+
+#controls {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+label {
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+input[type="color"] {
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+}
+
+/* style for the navigation bar */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar li a {
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+/* style for the room containers */
+.room-container {
+    display: none;
+}
+
+.room-container.active {
+    display: block;
+}
+
+/* style for the lights */
+.light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

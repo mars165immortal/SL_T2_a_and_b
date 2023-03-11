@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Lighting Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Smart Lighting</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="smartLight.html">Living Room</a></li>
+				<li><a href="smartLightb.html">Bedroom</a></li>
+				<li class="active"><a href="#">Kitchen</a></li>
+			</ul>
+		</div>
+	</nav>
+    <div class = "container">
+	<h1>Smart Lighting Application</h1>
+	<div id="lighting">
+		<div class="light" id="light1"></div>
+		<div class="light" id="light2"></div>
+		<div class="light" id="light3"></div>
+	</div>
+	<div id="controls">
+		<label for="light-select">Select Light:</label>
+		<select id="light-select">
+			<option value="light1">Light 1</option>
+			<option value="light2">Light 2</option>
+			<option value="light3">Light 3</option>
+		</select>
+		<label for="color-picker">Select Color:</label>
+		<input type="color" id="color-picker">
+        <label for="brightness-slider">Brightness:</label>
+        <input type="range" id="brightness-slider" min="0" max="100" value="100">
+	</div>
+    </div>  
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script2.js"></script>
+</body>
+</html>
